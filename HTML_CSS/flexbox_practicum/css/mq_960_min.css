@@ -1,0 +1,164 @@
+/*EMPHASIS- Not optimal css*/
+em {
+    font-size: 1.5rem;
+}
+
+/*Navigation Bar Top Fixed*/
+/*________________________*/
+
+.navBarTopFixed nav {
+    display:flex;
+    justify-content: space-between;
+}
+
+.navBarTopFixed label, .navBarTopFixed button {
+    display:flex;
+    flex-flow:row nowrap;
+}
+.navBarLogo .desktopLogoName {
+    display:flex;
+}
+.mobileLogoName {
+    display:none;
+}
+.navBarTopFixed nav div {
+    display:flex;
+    justify-content: space-around;
+    height:100%;
+    align-items:center;
+}
+.navBarLogo {
+    width: 10rem;
+}
+.navBarTopFixed nav div:last-child {
+    justify-content: flex-end;
+}
+.navBarNavigation {
+    height:80%;
+    width: 8rem;
+}
+.navBarTopFixed h1 {
+    align-self:center;
+    text-align:left;
+}
+.navBarTopFixed label, .navBarTopFixed button {
+    display:flex;
+    justify-content: center;
+    flex-grow:1;
+    height:100%;
+    border-left: 1px solid black;
+    border-bottom: 2px solid transparent;
+}
+.navBarTopFixed label:hover, .navBarTopFixed button:hover {
+    cursor:pointer;
+    border-bottom: 2px solid rgba(255,255,255, 1);
+}
+#desktopNavigation {
+    display:flex;
+}
+ /*DROPDOWNMENU HACKS*/
+/*______________________*/
+
+
+input[id="show_menuHelp"]:checked ~#menuHelp {
+
+    display:flex;
+    height:10rem;
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid black;
+}
+input[id="show_menuAboutUs"]:checked ~#menuAboutUs {
+
+    display:flex;
+    height:10rem;
+    background-color: rgba(255,255,255,.8);
+    border: 2px solid black;
+}
+#menuHelp {
+    display:flex;
+    height:0;
+    right:16.05rem;
+    background-color: rgba(1,1,1,0);
+    border: 2px solid transparent;
+}
+#menuAboutUs {
+    display:flex;
+    height:0;
+    right:0.05rem;
+    background-color: rgba(1,1,1,0);
+    border: 2px solid transparent;
+}
+
+.dropdownMenu {
+    flex-flow:column nowrap;
+    justify-content: space-evenly;
+    align-items:center;
+    width:16rem;
+    position:fixed;
+    top:5vh;
+    transition-property: all;
+    transition-timing-function: linear;
+    transition-duration: .2s;
+    overflow:hidden;
+
+}
+.dropdownMenu p {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:25%;
+    width:100%;
+    cursor:pointer;
+    border-bottom: 1px solid black;
+    font-size:1.5rem;
+    font-weight: bold;
+}
+.dropdownMenu p:hover {
+    background-color: rgba(42, 72, 166, .5);
+}
+
+/*---------------------------*/
+/*DROPDOWN MENU HACKS END*/
+
+/*----------------------------*/
+/*Navigation Bar Top Fixed END*/
+
+/*Index Above the Fold*/
+/*______________________*/
+
+.idx_atf {
+    background-image: url("../img/tinyBird_960_min-1743.jpg");
+
+}
+.idx_atf h1 {
+    font-size:3rem;
+}
+.idx_atf h2 {
+    margin-top:5vh;
+}
+.idx_atf h3 {
+    align-self:left;
+    width: 25vw;
+    font-size:1.5rem;
+    margin-bottom: 25vh;
+}
+.idx_atf button {
+    background-color: rgba(255,255,255,.7);
+}
+.navBarMobile {
+    display:none;
+}
+
+/*--------------------------*/
+/*Index Above the Fold END*/
+
+/*Navigation Bar Mobile Footer*/
+/*_____________________________*/
+
+button:hover {
+    background-color: rgba(42, 72, 166, 1);
+
+}
+
+/*Transitions and Animations*/
+/*____________________________*/

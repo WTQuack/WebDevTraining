@@ -1,0 +1,27 @@
+/*Index Above the Fold*/
+/*______________________*/
+
+.idx_atf {
+    background-image:url("../img/tinyBird_420_min-1743.jpg");
+    background-position: top;
+}
+.idx_atf h2 {
+    width: 70vh;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+}
+.idx_atf h3 {
+    align-self:center;
+    width: 180px;
+    padding-right:0;
+    margin-bottom:30vh;
+}
+.idx_atf button {
+    align-self:center;
+    width: 220px;
+    margin-bottom: 5vh;
+
+}
+
+/*--------------------------*/
+/*Index Above the Fold END*/

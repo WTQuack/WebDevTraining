@@ -1,0 +1,201 @@
+*  {
+    /*box-sizing: border-box;*/
+}
+body {
+    font-family: monospace;
+    /*Layout*/
+    min-height: 100vh;
+    display:flex;
+    flex-flow:row wrap;
+    /*Background*/
+    background-color:rgba(1, 35, 111, 0.5);
+}
+.navBarTopFixed {
+    /*Layout*/
+    position: fixed;
+    height: 2rem;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    /*Background*/
+    background-color: rgba(20,204,137, 0.5);
+}
+.navBarTopFixed nav, .navBarTopFixed div {
+    width: 20%;
+    height:100%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items:center;
+}
+.navBarTopFixed nav svg , .navBarTopFixed div svg  {
+    height:100%;
+}
+.navBarTopFixed nav svg:hover , .navBarTopFixed div svg:hover  {
+    fill: rgb(255,121,0);
+    cursor:pointer;
+}
+.idx_atf {
+    /*Layout*/
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-flow: column nowrap;
+    align-items: right;
+    justify-content: space-between;
+    /*Background*/
+    background-color:rgba(1, 35, 111, 0.5);
+    background-image: url("../img/Seagull-cut-.jpg");
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+}
+.idx_atf .svg_logo {
+    align-self: center;
+    height: 2rem;
+    z-index: 2000;
+}
+.idx_atf .svg_logo:hover {
+    fill: rgb(255,121,0);
+    cursor:pointer;
+}
+.idx_atf div {
+    /*Layout*/
+    align-self: flex-end;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    /*Background*/
+    border: 2px double rgba(133, 131, 127, 0.5);
+    background: rgba(45, 44, 42, 0.5);
+    /*Formatting*/
+    border: 2px double rgba(133, 131, 127, 0.5);
+    text-align: center;
+}
+em {
+    font-style: italic;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+}
+.idx_atf div h3 {
+    /*Layout*/
+    width:100%;
+    /*Formatting*/
+    color: rgba(250, 248, 244, 0.8);
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    font-style:italic;
+}
+.idx_atf div p {
+    /*Layout*/
+    margin: 1rem 0;
+    width:100%;
+    /*formatting*/
+    font-size: .8rem;
+    color: #b2b2b2;
+
+}
+.idx_atf div button {
+    /*Layout*/
+    margin: .7rem 0 0 0;
+    width: 75%;
+    height: 10vh;
+    border-radius: 100px 100px 0 0;
+    /*background*/
+    border: 4px solid rgba(185, 183, 179, 0.5);
+    background-color: #d8d8d8;
+    /*formatting*/
+    font-size: 3rem;
+
+}
+.idx_atf div button:hover {
+    background-color: rgba(255,121,0, .5);
+}
+.mainContent {
+    /*Layout*/
+    display: flex;
+    flex-flow: column nowrap;
+    align-items:center;
+    width:100%;
+    height: 90vh;
+    /*Background*/
+    background-color: rgba(153, 149, 138);;
+}
+.mainContent  h1 {
+    /*Layout*/
+    width:100%;
+    /*Formatting*/
+    line-height:2rem;
+    color:black;
+    font-size: 24px;
+    text-align: center;
+}
+.mainContent .svg_logo {
+    align-self:center;
+    height: 2rem;
+}
+.contentHolder {
+    /*Layout*/
+    width:100%;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    border-radius: 0;
+    /*Formatting*/
+    border: 0;
+    border-top: 5px solid #162d38;
+    border-bottom: 5px solid #162d38;
+    box-shadow: 0 0 10px 2px black;
+}
+.contentContent {
+    /*Layout*/
+    display:flex;
+    flex-flow: row nowrap;
+
+    margin:6vh 0 6vh 0;
+    height: 20vh;
+    width: 45%;
+    border-radius: 10px;
+    /*Background*/
+    border:2px solid black;
+    background-color: #eeeeee;
+    box-shadow: 0 0 5px 2px black;
+}
+.contentContent:hover {
+    background-color: rgb(255,121,0);
+    border: 2px solid #725009;
+    box-shadow: 0 0 0 0 black;
+    cursor:pointer;
+}
+.contentContent section {
+    width:30%;
+    height: 100%;
+}
+.contentContent section:first-of-type {
+
+    width:70%;
+}
+.contentContent_promoSVG {
+    height:100%;
+    width:97%;
+
+}
+.contentContent section p {
+    font-size: 1rem;
+    padding:10%;
+
+}
+footer {
+    /*Layout*/
+    width:100%;
+    height: 10vh;
+    /*Background*/
+    box-shadow: 0 -2px 3px 2px;
+    border-top: 5px solid #625131;
+    background-color: rgba(204,151,20, 0.5)
+}

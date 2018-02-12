@@ -1,0 +1,184 @@
+/*EMPHASIS- Not optimal css*/
+em {
+    font-size:1.1rem;
+    line-height: 1.3rem;
+    font-style: italic;
+}
+/*Navigation Bar Top Fixed*/
+/*________________________*/
+.navBarTopFixed {
+
+    position: fixed;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(1, 1, 1, .5);
+}
+.navBarTopFixed nav {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    width:100%;
+}
+.navBarTopFixed label, .desktopLogoName {
+    display:none;
+}
+.mobileLogoName {
+    margin: 0 2vh;
+}
+.navBarLogo {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100%;
+    width:13rem;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid transparent;
+    cursor:pointer;
+}
+
+.navBarLogo:hover {
+    color: whitesmoke;
+    background-color: rgba(42, 72, 166, 1);
+    border-bottom: 2px solid rgba(255,255,255, 1);
+}
+.navBarTopFixed h1 {
+    font-size: 1.2rem;
+
+}
+#desktopNavigation {
+    display:none;
+}
+/*----------------------------*/
+/*Navigation Bar Top Fixed END*/
+
+/*Index Above the Fold*/
+/*______________________*/
+
+.idx_atf {
+    display:flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color:blue;
+    background-image: url(../img/tinyBird_420_max-1743.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.idx_atf section {
+    display:flex;
+    flex-flow: column nowrap;
+    width: 100%;
+
+}
+.idx_atf h1 {
+    width: 100%;
+    margin-top: 7vh;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-align:center;
+
+}
+.idx_atf h2 {
+    align-self:center;
+    width: 60vw;
+    margin-top: 3vh;
+    font-size: 1rem;
+    text-align: center;
+}
+.idx_atf h3 {
+    align-self: left;
+    width: 50vw;
+    margin-bottom: 5vh;
+    text-align:center;
+    background-color: rgba(255,255,255, .5);
+    border-radius: 3px;
+}
+
+.idx_atf button {
+    height: 10vh;
+    width: 45vw;
+    align-self:center;
+    margin-bottom: 8vh;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: rgba(255,255,255,.3);
+    border: 3px solid rgba(255,255,255,.5);
+    border-radius: 10px;
+}
+/*--------------------------*/
+/*Index Above the Fold END*/
+
+/*Navigation Bar Mobile Footer*/
+/*_____________________________*/
+
+.navBarMobile {
+    display:flex;
+    flex-flow: column nowrap;
+    width:100%;
+}
+.navBarMobile button {
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 9vh;
+    width: 100%;
+    font-size: 1.2rem;
+    background-color: deepskyblue;
+    border-bottom: 1px solid #006b99;
+    border-top: 1px solid #0084b8;
+}
+.navBarMobile button:first-child {
+    border-top:0;
+}
+.navBarMobile button:last-child {
+    border-bottom:0;
+}
+button:hover, label:hover {
+    background-color: rgba(42, 72, 166, 1);
+
+}
+.navBarMobile button svg {
+    margin: 0 5vw 0 10vw;
+}
+/*-------------------------*/
+/*Navigation Bar Mobile Footer END*/
+
+/*Transitions and Animations*/
+/*____________________________*/
+
+.trans {
+    transition-property: all;
+    transition-duration: 180ms;
+    transition-timing-function: ease-in;
+}
+.pulse {
+    animation-name: pulseAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+    animation-timing-function: ease-in;
+}
+@keyframes pulseAnim {
+    0% { color: black; }
+    50% { color: whitesmoke; }
+    100% { color: black; }
+}
+.transformSpin {
+    animation-name: spinnerAnim;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /*animation-delay: 4.8s;*/
+
+}
+@keyframes spinnerAnim {
+    0% { transform:rotate(0deg); }
+    49% { transform:rotate(0deg); }
+    54% { transform:rotate(360deg); }
+    100% { transform:rotate(360deg); }
+}

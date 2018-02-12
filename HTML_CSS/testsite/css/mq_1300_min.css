@@ -1,0 +1,41 @@
+.idx_atf {
+    background-position: top;
+}
+.idx_atf div {
+    margin: 0 4rem;
+    height: 70vh;
+    width: 40%;
+    border-radius: 50px 50px 0 0;
+}
+.idx_atf div h3 {
+    padding: 2vh 0;
+    font-size: 2.5rem;
+    line-height: 4rem;
+}
+.idx_atf div p {
+    font-size: 1.6rem;
+}
+em {
+    font-size: 2.3rem;
+    line-height: 3rem;
+}
+.idx_atf h1 {
+    font-size: 2rem;
+}
+.contentHolder {
+    width:70%;
+    border-radius: 50px;
+    border: 10px solid #162732;
+    box-shadow: 0 0 5px 2px black;
+}
+.contentContent {
+    flex-flow:row nowrap;
+}
+.contentContent section {
+    width:50%;
+    height:100%;
+}
+.contentContent section p {
+    font-size: 1.2rem;
+    padding:10%;
+}
